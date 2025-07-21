@@ -78,7 +78,7 @@ const Footer = () => {
                     aria-label={`View Instagram Image ${num}`}
                   >
                     <Image
-                      src={`/Footer/instagram ${num}.jpg`}
+                      src={`/Footer/Instagram ${num}.jpg`}
                       alt={`Instagram Image ${num}`}
                       width={150}
                       height={100}
