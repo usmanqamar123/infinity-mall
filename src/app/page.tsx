@@ -1,6 +1,6 @@
 import Head from "next/head";
 import PageChild from "./PageChild";
-import { Poppins, AR_One_Sans } from "next/font/google";
+import { Poppins, AR_One_Sans, Roboto } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,6 +13,13 @@ const arOneSans = AR_One_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-ar-one-sans",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -30,7 +37,9 @@ export default function Home() {
         />
       </Head>
 
-      <div className={`${poppins.variable} ${arOneSans.variable} relative`}>
+      <div
+        className={`${poppins.variable} ${arOneSans.variable} ${roboto.variable} relative`}
+      >
         <PageChild />
       </div>
     </>
