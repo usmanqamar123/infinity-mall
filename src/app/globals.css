@@ -132,3 +132,25 @@ body {
 .ml6 .letter:nth-child(27) {
   animation-delay: 1.35s;
 }
+
+
+
+
+/* NEIGHBOR HOOD */
+
+.thin-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #B87333 transparent; /* Firefox */
+
+  /* WebKit */
+}
+.thin-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #B87333;
+  border-radius: 4px;
+}
