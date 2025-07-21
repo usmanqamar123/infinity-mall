@@ -11,32 +11,32 @@ interface GridItem {
 const gridItems: GridItem[] = [
   {
     id: 1,
-    image: "/ImageGrid/brand-1.png",
+    image: "/Home/ImageGrid/brand-1.png",
     text: "Cool & Chic Brands Live the Unusual",
   },
   {
     id: 2,
-    image: "/ImageGrid/brand-2.jpg",
+    image: "/Home/ImageGrid/brand-2.jpg",
     text: "Lifestyle at its Best",
   },
   {
     id: 3,
-    image: "/ImageGrid/brand-3.jpg",
+    image: "/Home/ImageGrid/brand-3.jpg",
     text: "Enticing Courtyard Terraces",
   },
   {
     id: 4,
-    image: "/ImageGrid/brand-4.png",
+    image: "/Home/ImageGrid/brand-4.png",
     text: "Ultra-modern Cinema",
   },
   {
     id: 5,
-    image: "/ImageGrid/brand-5.png",
+    image: "/Home/ImageGrid/brand-5.png",
     text: "Classy Restaurants",
   },
   {
     id: 6,
-    image: "/ImageGrid/brand-6.png",
+    image: "/Home/ImageGrid/brand-6.png",
     text: "Infinity Swimming Pools",
   },
 ];

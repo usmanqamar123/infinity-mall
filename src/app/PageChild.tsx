@@ -9,6 +9,7 @@ import ApartmentDetails from "@/components/home/ApartmentDetails";
 import Amenities from "@/components/home/Amenities";
 import Blogs from "@/components/home/Blogs";
 import Neighborhood from "@/components/home/Neighborhood";
+import ContactCTA from "@/components/home/ContactCTA";
 
 export default function PageChild() {
   return (
@@ -20,8 +21,9 @@ export default function PageChild() {
         <ImageGrid />
         <ApartmentDetails />
         <Amenities />
-        <Neighborhood/>
-        <Blogs/>
+        <ContactCTA />
+        <Neighborhood />
+        <Blogs />
       </main>
       <Footer />
     </>

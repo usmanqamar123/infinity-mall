@@ -1,0 +1,26 @@
+  <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 62 62"
+        className="w-full h-auto max-w-[8rem] text-[#81422C]"
+        aria-label="Double Height Shops Icon"
+      >
+        <path
+          fill="#81422c"
+          d="M39,16V14a5,5,0,0,0-10,0v2a5,5,0,0,0,2,4v1.27l-4.82,1.38A3,3,0,0,0,24,25.51V39h2V25.51a1,1,0,0,1,.73-1L33,22.75V20.9a5,5,0,0,0,2,0v1.85l6.27,1.8a1,1,0,0,1,.73,1V39h2V25.51a3,3,0,0,0-2.18-2.89L37,21.25V20A5,5,0,0,0,39,16Zm-5,3a3,3,0,0,1-3-3V14a3,3,0,0,1,6,0v2A3,3,0,0,1,34,19Z"
+          transform="translate(-1 -1)"
+        />
+        <rect fill="#81422c" y="60" width="2" height="2" />
+        <rect fill="#81422c" x="60" y="60" width="2" height="2" />
+        <polygon
+          fill="#81422c"
+          points="50 4.41 50 24 52 24 52 4.41 53.29 5.71 54.71 4.29 51 0.59 47.29 4.29 48.71 5.71 50 4.41"
+        />
+        <rect fill="#81422c" x="50" y="26" width="2" height="2" />
+        <path
+          fill="#81422c"
+          d="M55.71,58.71l-1.42-1.42L53,58.59V39H51V58.59l-1.29-1.3-1.42,1.42L50.59,61H40V28H38V61H35V38H33V61H30V28H28V61H18V7H38V1H8V61H5v2H59V61H53.41ZM18,3H36V5H18ZM16,9H14v2h2v2H12v2h4v2H14v2h2v2H12v2h4v2H14v2h2v2H12v2h4v2H14v2h2v2H12v2h4v2H14v2h2v2H12v2h4v2H14v2h2v2H12v2h4v2H14v2h2v2H10V3h6Z"
+          transform="translate(-1 -1)"
+        />
+        <rect fill="#81422c" x="50" y="34" width="2" height="2" />
+        <rect fill="#81422c" x="50" y="30" width="2" height="2" />
+      </svg>
