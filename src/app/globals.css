@@ -133,24 +133,21 @@ body {
   animation-delay: 1.35s;
 }
 
-
-
-
 /* NEIGHBOR HOOD */
 
-.thin-scrollbar {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #B87333 transparent; /* Firefox */
+/* .thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #008b8b transparent; 
 
-  /* WebKit */
-}
+} */
+
 .thin-scrollbar::-webkit-scrollbar {
-  width: 6px;
+  display: none;
 }
-.thin-scrollbar::-webkit-scrollbar-track {
+/* .thin-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
 .thin-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #B87333;
+  background-color: #008b8b;
   border-radius: 4px;
-}
+} */

@@ -46,18 +46,18 @@ const Neighborhood = () => {
 
   return (
     <section className="bg-[#f1efec] w-full h-full flex flex-col gap-8 2xl:gap-16 items-center justify-center px-4 md:px-8 xl:px-12 py-20 lg:py-24 2xl:py-32">
-      <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#B87333]">
+      <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
         Neighborhoods
       </h2>
 
       <main className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start justify-between gap-0">
         {/* Left Column */}
-        <div className="w-full lg:w-[50%] bg-white p-4 space-y-2 max-h-[500px] overflow-y-auto thin-scrollbar">
+        <div className="w-full lg:w-[45%] bg-white p-4 space-y-2 h-[600px] thin-scrollbar">
           {accordionData.map((item, index) => (
             <div key={index} className="border-b border-black">
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full flex justify-between items-center py-6 text-lg sm:text-xl text-left text-[#B87333] font-semibold transition-colors duration-300"
+                className="w-full flex justify-between items-center py-6 text-lg lg:text-xl text-left text-[#006994] font-medium transition-colors duration-300"
               >
                 <span>{item.title}</span>
                 <span className="text-2xl">
@@ -83,7 +83,7 @@ const Neighborhood = () => {
         </div>
 
         {/* Right Column */}
-        <div className="w-full lg:w-[50%] h-[550px]">
+        <div className="w-full lg:w-[55%] h-[600px]">
           <Image
             src="/Home/Neighborhood/neighbor.png"
             alt="Neighborhood"

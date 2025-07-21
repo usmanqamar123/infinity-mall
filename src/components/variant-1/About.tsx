@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         <div className="w-full lg:w-[45%] flex flex-col items-start justify-start space-y-7 text-sm md:text-[15px]">
-          <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#B87333]">
+          <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
             INFINITY MALL & RESIDENCE
           </h2>
           <p>
@@ -39,7 +39,7 @@ const About = () => {
 
           <button
             type="button"
-            className=" bg-[#B87333] cursor-pointer px-10 py-3 text-white"
+            className=" bg-gradient-to-r from-[#006994] to-[#008B8B] cursor-pointer px-10 py-3 text-white"
           >
             Investment for the Future!
           </button>

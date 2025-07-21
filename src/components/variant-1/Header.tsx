@@ -40,14 +40,14 @@ const Header = () => {
 
         <div className="flex gap-10">
           {navItems.map((item) => (
-            <Link key={item} href="/" className="hover:text-[#B87333]">
+            <Link key={item} href="/" className="hover:text-[#008B8B]">
               {item}
             </Link>
           ))}
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="bg-gradient-to-r from-[#D99464] to-[#B87333] px-4 py-2 rounded-full text-white">
+          <button className="bg-gradient-to-r from-[#006994] to-[#008B8B] px-4 py-2 rounded-full text-white">
             Request a call
           </button>
 
@@ -57,7 +57,7 @@ const Header = () => {
                 <Icon
                   key={idx}
                   size={24}
-                  className="text-[#B87333] hover:text-[#D99464] transition-colors duration-300"
+                  className="text-[#006994] hover:text-[#008B8B] transition-colors duration-300"
                 />
               )
             )}
@@ -99,7 +99,7 @@ const Header = () => {
             </Link>
           ))}
 
-          <button className="bg-gradient-to-r from-[#D99464] to-[#B87333] px-4 py-2 rounded-full text-white mx-auto">
+          <button className="bg-gradient-to-r from-[#006994] to-[#008B8B] px-4 py-2 rounded-full text-white mx-auto">
             Request a call
           </button>
 
@@ -109,7 +109,7 @@ const Header = () => {
                 <Icon
                   key={idx}
                   size={24}
-                  className="text-[#B87333] hover:text-[#D99464] transition-colors duration-300"
+                  className="text-[#006994] hover:text-[#008B8B] transition-colors duration-300"
                 />
               )
             )}

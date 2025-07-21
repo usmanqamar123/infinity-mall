@@ -63,7 +63,7 @@ const ApartmentDetails = () => {
 
   return (
     <section className="bg-[#F5F5F5] w-full h-full flex flex-col gap-8 2xl:gap-16 items-center justify-center px-4 md:px-8 xl:px-12 py-20 lg:py-24 2xl:py-32">
-      <h2 className="text-2xl lg:text-3xl font-medium text-[#B87333] max-w-xl text-center">
+      <h2 className="text-2xl lg:text-3xl font-medium text-[#006994] max-w-xl text-center">
         Inspiring Built Space Everything you need is right here.
       </h2>
       <main
@@ -78,10 +78,10 @@ const ApartmentDetails = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={` px-4 py-2 text-sm font-medium border rounded ${
+                className={` px-4 py-2 text-sm font-medium border rounded cursor-pointer ${
                   activeTab === tab
-                    ? "bg-[#D99464]  text-white"
-                    : "bg-white border-gray-300"
+                    ? "bg-[#006994]  text-white"
+                    : "bg-white border-gray-300 hover:bg-[#006994] hover:text-white"
                 }`}
               >
                 {tab}
@@ -101,7 +101,7 @@ const ApartmentDetails = () => {
 
           <button
             type="button"
-            className=" bg-[#B87333] px-10 py-3 text-white"
+            className=" bg-gradient-to-r from-[#006994] to-[#008B8B] px-10 py-3 text-white cursor-pointer"
           >
             Schedule a Visit
           </button>
@@ -110,9 +110,10 @@ const ApartmentDetails = () => {
         {/* Right Column (Empty Placeholder) */}
         <div
           style={{
-            backgroundImage: "url('/Home/ApartmentDetails/ApartmentDetails.png')",
+            backgroundImage:
+              "url('/Home/ApartmentDetails/ApartmentDetails.png')",
           }}
-          className="w-full lg:w-[45%] h-[550px] bg-center bg-cover bg-no-repeat flex items-center justify-center "
+          className="w-full lg:w-[43%] h-[550px] bg-center bg-cover bg-no-repeat flex items-center justify-center "
         ></div>
       </main>
     </section>

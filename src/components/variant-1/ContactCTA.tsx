@@ -28,7 +28,7 @@ const ContactCTA = () => {
         {/* Schedule Button (Optional: can keep both) */}
         <button
           type="button"
-          className="relative z-10 bg-[#B87333] cursor-pointer px-10 py-3 text-white"
+          className="relative z-10 bg-gradient-to-r from-[#006994] to-[#008B8B] cursor-pointer px-10 py-3 text-white"
         >
           Schedule a Meeting
         </button>
