@@ -110,7 +110,7 @@ const ApartmentDetails = () => {
         {/* Right Column (Empty Placeholder) */}
         <div
           style={{
-            backgroundImage: "url('/ApartmentDetails/ApartmentDetails.png')",
+            backgroundImage: "url('/Home/ApartmentDetails/ApartmentDetails.png')",
           }}
           className="w-full lg:w-[45%] h-[550px] bg-center bg-cover bg-no-repeat flex items-center justify-center "
         ></div>
