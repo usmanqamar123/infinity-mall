@@ -1,10 +1,11 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
         { label: "Home", link: "/" },
         { label: "Contact", link: "/contact" },
         { label: "Blogs", link: "/blogs" },
-        { label: "FAQs", link: "" },
+        // { label: "FAQs", link: "" },
       ],
     },
   ];
@@ -53,7 +54,7 @@ const Footer = () => {
                   {item.links.map((link, idx) => (
                     <li key={idx}>
                       <Link href={link.link}>
-                        <span className="text-black text-sm hover:text-[#B87333] hover:translate-x-1 transition-all duration-300">
+                        <span className="text-black text-sm hover:text-[#006994] hover:translate-x-1 transition-all duration-300">
                           {link.label}
                         </span>
                       </Link>
@@ -77,7 +78,7 @@ const Footer = () => {
                     aria-label={`View Instagram Image ${num}`}
                   >
                     <Image
-                      src={`/Footer/instagram ${num}.jpg`}
+                      src={`/Footer/Instagram ${num}.jpg`}
                       alt={`Instagram Image ${num}`}
                       width={150}
                       height={100}
@@ -115,22 +116,22 @@ const Footer = () => {
         </div>
         <div className="flex gap-4">
           <Link href="" target="_blank">
-            <span className="hover:bg-[#008B8B] flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full">
+            <span className="group flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full gradient-border-wrapper hover:bg-[#006994]/20 transition-all duration-300">
               <FaLinkedinIn size={20} className="text-white" />
             </span>
           </Link>
           <Link href="" target="_blank">
-            <span className="hover:bg-[#008B8B] flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full">
+            <span className="group flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full gradient-border-wrapper hover:bg-[#006994]/20 transition-all duration-300">
               <FaFacebookF size={20} className="text-white" />
             </span>
           </Link>
           <Link href="" target="_blank">
-            <span className="hover:bg-[#008B8B] flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full">
+            <span className="group flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full hover:bg-[#006994]/20 transition-all duration-300">
               <FaInstagram size={20} className="text-white" />
             </span>
           </Link>
           <Link href="">
-            <span className="hover:bg-[#008B8B] flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full">
+            <span className="group flex items-center justify-center w-10 h-10 bg-[#006994] rounded-full  hover:bg-[#006994]/20 transition-all duration-300">
               <FaXTwitter size={20} className="text-white" />
             </span>
           </Link>
