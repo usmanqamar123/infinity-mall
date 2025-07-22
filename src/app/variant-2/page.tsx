@@ -1,7 +1,14 @@
+import Amenities from "@/components/variant-2/Amenities";
+import ApartmentDetails from "@/components/variant-2/ApartmentDetails";
 import { Carousel } from "@/components/variant-2/Carousel";
-import ComplexConstruction from "@/components/variant-2/ComplexConstruction";
+import Footer from "@/components/variant-2/Footer";
+import Header from "@/components/variant-2/Header";
+// import ComplexConstruction from "@/components/variant-2/ComplexConstruction";
 import Hero from "@/components/variant-2/Hero";
+import LocationMap from "@/components/variant-2/Location";
 import ModernArchitecture from "@/components/variant-2/ModernArchitecture";
+import NewsArticles from "@/components/variant-2/NewsArticles";
+import Partners from "@/components/variant-2/Partners";
 import React from "react";
 
 const page = () => {
@@ -64,14 +71,23 @@ const page = () => {
   ];
 
   return (
-    <div className="overflow-x-hidden">
-      <Hero />
-      <ModernArchitecture />
-      <ComplexConstruction />
-      <div className="relative overflow-hidden w-full h-full pt-10 pb-40">
-        <Carousel slides={slideData} />
-      </div>
-    </div>
+    <>
+      <Header />
+      <main className="overflow-x-hidden">
+        <Hero />
+        <ModernArchitecture />
+        {/* <ComplexConstruction /> */}
+        <div className="relative overflow-hidden w-full h-full pb-20">
+          <Carousel slides={slideData} />
+        </div>
+        <ApartmentDetails />
+        <Amenities />
+        <NewsArticles />
+        <Partners />
+        <LocationMap />
+      </main>
+      <Footer />
+    </>
   );
 };
 

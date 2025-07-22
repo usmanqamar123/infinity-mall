@@ -14,10 +14,10 @@ const Hero = () => {
         className="absolute top-0 right-0 w-full h-full object-cover"
       />
       <div className="absolute w-full h-full bg-black/40 " />
-      <div className="absolute bg-gray-950 w-[500px] h-[600px] top-40 left-[calc(50%-250px)] flex flex-col gap-7 items-center justify-center">
-        <p className="text-[#008B8B] text-2xl italic font-normal">Welcome to</p>
-        <div className="text-nowrap space-y-2 text-center">
-          <h1 className="text-6xl font-medium text-white">
+      <div className="absolute bg-gray-950 w-[80%] lg:w-[500px] h-[600px] top-40 left-[10%] lg:left-[calc(50%-250px)] flex flex-col gap-7 items-center justify-center">
+        <p className="text-[#008B8B] text-xl italic font-normal">Welcome to</p>
+        <div className="lg:text-nowrap space-y-2 text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-medium text-white">
             Infinity Mall & Residence
           </h1>
           <h2 className="text-white text-4xl font-thin">
@@ -25,7 +25,7 @@ const Hero = () => {
           </h2>
         </div>
 
-        <button className="bg-[#008B8B] px-10 py-3 text-white">
+        <button className="cursor-pointer bg-[#008B8B] px-10 py-3 text-white">
           Learn More
         </button>
       </div>
