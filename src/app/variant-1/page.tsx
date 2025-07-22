@@ -9,6 +9,7 @@ import Header from "@/components/variant-1/Header";
 import ImageGrid from "@/components/variant-1/ImageGrid";
 import Neighborhood from "@/components/variant-1/Neighborhood";
 import React from "react";
+import LocationMap from "@/components/variant-1/Location";
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
         <ContactCTA />
         <Neighborhood />
         <Blogs />
+        <LocationMap />
       </main>
       <Footer />
     </>

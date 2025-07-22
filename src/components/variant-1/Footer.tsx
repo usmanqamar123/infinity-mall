@@ -23,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#f1efec] overflow-x-clip relative w-full !text-black pt-10 z-10">
-      <div className="w-full max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-12 !text-black items-start justify-between px-6 md:px-10 xl:px-0">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-12 !text-black items-start justify-between px-6 md:px-10 xl:px-0">
         {/* Left Section */}
         <div className="w-full lg:w-[40%] flex flex-col items-start gap-8">
           <Image
