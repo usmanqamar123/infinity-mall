@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         <div className="w-full lg:w-[45%] flex flex-col items-start justify-start space-y-7 text-sm md:text-[15px]">
-          <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
+          <h2 className="font-semibold text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
             INFINITY MALL & RESIDENCE
           </h2>
           <p>

@@ -15,7 +15,7 @@ const LocationMap = () => {
   };
 
   return (
-    <div className="w-full max-w-[1440px] mx-auto h-[500px] rounded-xl overflow-hidden mb-10 md:mb-14 lg:!mb-20">
+    <div className="w-full max-w-[1440px] mx-auto h-[500px] rounded-xl overflow-hidden mb-20 md:mb-24 lg:mb-32">
       <Map height={500} defaultCenter={[latitude, longitude]} defaultZoom={16}>
         <Marker
           width={50}

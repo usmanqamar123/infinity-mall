@@ -61,7 +61,7 @@ const Amenities: React.FC = () => {
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-12  xl:py-32 gap-8 lg:gap-16 xl:gap-20">
       <h2
-        className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#006994] max-w-2xl text-center"
+        className="font-semibold text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]"
         data-aos="fade-up"
       >
         World Class Amenities

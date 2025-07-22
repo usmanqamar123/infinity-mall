@@ -46,7 +46,7 @@ const Neighborhood = () => {
 
   return (
     <section className="bg-[#f1efec] w-full h-full flex flex-col gap-8 2xl:gap-16 items-center justify-center px-4 md:px-8 xl:px-12 py-20 lg:py-24 2xl:py-32">
-      <h2 className="text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
+      <h2 className="font-semibold text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
         Neighborhoods
       </h2>
 

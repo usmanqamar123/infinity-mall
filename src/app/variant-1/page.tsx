@@ -10,6 +10,7 @@ import ImageGrid from "@/components/variant-1/ImageGrid";
 import Neighborhood from "@/components/variant-1/Neighborhood";
 import React from "react";
 import LocationMap from "@/components/variant-1/Location";
+import Partners from "@/components/variant-1/Partners";
 
 const page = () => {
   return (
@@ -25,6 +26,7 @@ const page = () => {
         <Neighborhood />
         <Blogs />
         <LocationMap />
+        <Partners />
       </main>
       <Footer />
     </>
