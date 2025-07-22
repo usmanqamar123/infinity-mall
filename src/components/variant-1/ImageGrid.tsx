@@ -56,7 +56,7 @@ const ImageGrid: React.FC = () => {
             className="object-cover group-hover:scale-110 transition-transform duration-700"
             priority={item.id === 1}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/0 to-[#0699FF]/40 flex flex-col items-center justify-center">
+          <div className="absolute inset-0 w-full h-full bg-[#0699FF]/70 -translate-y-[1000px] group-hover:translate-y-0 transition-transform duration-500 flex flex-col items-center justify-center">
             <h2 className="text-white text-xl md:text-[22px] !font-medium text-center">
               {item.text}
             </h2>
