@@ -1,51 +1,58 @@
-import Image from "next/image";
-import React from "react";
+import React, { JSX } from "react";
+import BusinessCenterIcon from "../../../public/variant-1/Amenities/BusinessCenter.svg";
+import DoubleHeightShopsIcon from "../../../public/variant-1/Amenities/DoubleHeightShops.svg";
+import FoodCourtIcon from "../../../public/variant-1/Amenities/FoodCourt.svg";
+import RooftopSittingIcon from "../../../public/variant-1/Amenities/RooftopSitting.svg";
+import ServicedApartmentsIcon from "../../../public/variant-1/Amenities/ServicedApartments.svg";
+import KidsPlayAreaIcon from "../../../public/variant-1/Amenities/KidsPlayArea.svg";
+import SmartCarParkingIcon from "../../../public/variant-1/Amenities/SmartCarParking.svg";
+import SecurityIcon from "../../../public/variant-1/Amenities/Security.svg";
 
 interface Amenity {
   id: number;
-  icon: string;
+  icon: JSX.Element;
   title: string;
 }
 
 const amenities: Amenity[] = [
   {
     id: 1,
-    icon: "/Home/Amenities/BusinessCenter.svg",
+    icon: <BusinessCenterIcon className="size-20" />,
     title: "Business Center",
   },
   {
     id: 2,
-    icon: "/Home/Amenities/DoubleHeightShops.svg",
+    icon: <DoubleHeightShopsIcon className="size-20" />,
     title: "Double Height Shops",
   },
   {
     id: 3,
-    icon: "/Home/Amenities/FoodCourt.svg",
+    icon: <FoodCourtIcon className="size-20" />,
     title: "Food Court",
   },
   {
     id: 4,
-    icon: "/Home/Amenities/RooftopSitting.svg",
+    icon: <RooftopSittingIcon className="size-20" />,
     title: "Rooftop Sitting",
   },
   {
     id: 5,
-    icon: "/Home/Amenities/ServicedApartments.svg",
+    icon: <ServicedApartmentsIcon className="size-20" />,
     title: "Serviced Apartments",
   },
   {
     id: 6,
-    icon: "/Home/Amenities/KidsPlayArea.svg",
+    icon: <KidsPlayAreaIcon className="size-20" />,
     title: "Kids Play Area",
   },
   {
     id: 7,
-    icon: "/Home/Amenities/SmartCarParking.svg",
+    icon: <SmartCarParkingIcon className="size-20" />,
     title: "Smart Car Parking",
   },
   {
     id: 8,
-    icon: "/Home/Amenities/Security.svg",
+    icon: <SecurityIcon className="size-20" />,
     title: "24/7 Security",
   },
 ];
@@ -63,16 +70,10 @@ const Amenities: React.FC = () => {
         {amenities.map((amenity) => (
           <div
             key={amenity.id}
-            className="h-24 flex flex-col items-center justify-between gap-3"
+            className="h-28 flex flex-col items-center justify-between gap-3"
           >
-            <Image
-              src={amenity.icon}
-              alt={amenity.title}
-              width={70}
-              height={70}
-              className="w-16 h-16 object-contain text-[#B87333]"
-            />
-            <h3 className="text-base sm:text-lg lg:text-xl font-medium text-[#B87333] text-center">
+            {amenity.icon}
+            <h3 className="text-base sm:text-lg lg:text-xl text-center">
               {amenity.title}
             </h3>
           </div>
