@@ -4,19 +4,19 @@ import Image from "next/image";
 const blogs = [
   {
     id: 0,
-    image: "/Home/Blogs/blog 1.png",
+    image: "/Home/Blogs/blog1.jpg",
     title: "Blog",
     desc: "Infinity Mall & Residence: The Best Real Estate...",
   },
   {
     id: 1,
-    image: "/Home/Blogs/blog 2.png",
+    image: "/Home/Blogs/blog2.jpg",
     title: "Blog",
     desc: "Why Infinity Mall & Residence is the Ultimate....",
   },
   {
     id: 2,
-    image: "/Home/Blogs/blog 3.png",
+    image: "/Home/Blogs/blog3.jpg",
     title: "Blog",
     desc: "Elevate Your Space on a Budget: DIY Home Decor....",
   },

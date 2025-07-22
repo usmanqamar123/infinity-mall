@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -14,6 +14,7 @@ import {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
     "Home",
@@ -24,10 +25,24 @@ const Header = () => {
     "Blog",
   ];
 
+  // Detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 70);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {/* Desktop Nav */}
-      <nav className="bg-white w-full fixed top-0 z-40 shadow-md px-10 py-6 hidden xl:flex items-center justify-between">
+      <nav
+        className={`w-full fixed top-0 z-40 px-10 py-6 hidden xl:flex items-center justify-between transition-all duration-300 ${
+          scrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
+      >
         <div className="flex items-center gap-3">
           <Image
             src="/InfinityMallLogo.png"
@@ -35,12 +50,24 @@ const Header = () => {
             height={70}
             alt="Infinity Mall Logo"
           />
-          <h2 className="text-2xl font-medium text-[#4E342E]">Infinity Mall</h2>
+          <h2
+            className={`text-2xl font-medium ${
+              scrolled ? "text-[#4E342E]" : "text-white"
+            }`}
+          >
+            Infinity Mall
+          </h2>
         </div>
 
         <div className="flex gap-10">
           {navItems.map((item) => (
-            <Link key={item} href="/" className="hover:text-[#008B8B]">
+            <Link
+              key={item}
+              href="/"
+              className={`hover:text-[#008B8B] ${
+                scrolled ? "text-[#4E342E]" : "text-white"
+              }`}
+            >
               {item}
             </Link>
           ))}
@@ -57,7 +84,9 @@ const Header = () => {
                 <Icon
                   key={idx}
                   size={24}
-                  className="text-[#006994] hover:text-[#008B8B] transition-colors duration-300"
+                  className={`transition-colors duration-300 ${
+                    scrolled ? "text-[#006994]" : "text-white"
+                  } hover:text-[#008B8B]`}
                 />
               )
             )}
@@ -65,7 +94,7 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Mobile Nav */}
+      {/* Mobile Nav (unchanged) */}
       <nav className="bg-white w-full fixed top-0 z-40 shadow-md px-5 py-4 flex xl:hidden justify-between items-center">
         <div className="flex items-center gap-3">
           <Image
@@ -85,7 +114,7 @@ const Header = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay (unchanged) */}
       {isMobileMenuOpen && (
         <div className="fixed top-20 left-0 w-full bg-white z-30 shadow-md px-5 py-6 lg:hidden flex flex-col gap-4 text-center">
           {navItems.map((item) => (
