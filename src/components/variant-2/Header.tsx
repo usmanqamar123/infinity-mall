@@ -126,7 +126,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay (unchanged) */}
       {isMobileMenuOpen && (
-        <div className="fixed h-full top-14 left-0 w-full bg-gray-950 z-30 shadow-md px-5 py-6 pt-10 lg:hidden flex flex-col gap-4 text-center">
+        <div className="fixed h-full top-14 left-0 w-full bg-gray-950 z-30 shadow-md px-5 py-6 pt-10 xl:hidden flex flex-col gap-4 text-center">
           {navItems.map((item) => (
             <Link
               key={item}

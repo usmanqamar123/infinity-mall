@@ -24,7 +24,7 @@ const partnerImages = [
 
 const Partners = () => {
   return (
-    <section className="w-full h-full flex flex-col gap-8 2xl:gap-16 items-center justify-center px-4 md:px-8 xl:px-12 pb-14">
+    <section className="w-full h-full flex flex-col gap-4 items-center justify-center px-4 md:px-8 xl:px-12 pb-10">
       <div className="text-center space-y-2">
         <p className="text-[#008B8B] text-xl italic font-normal">
           Our Partners
