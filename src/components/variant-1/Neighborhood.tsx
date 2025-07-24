@@ -54,13 +54,13 @@ const Neighborhood = () => {
         {/* Left Column */}
         <div className="w-full lg:w-[45%] bg-white p-4 space-y-2 h-[600px] thin-scrollbar">
           {accordionData.map((item, index) => (
-            <div key={index} className="border-b border-black">
+            <div key={index} className="border-b border-black ">
               <button
                 onClick={() => toggleAccordion(index)}
                 className="w-full flex justify-between items-center py-6 text-lg lg:text-xl text-left text-[#006994] font-medium transition-colors duration-300"
               >
                 <span>{item.title}</span>
-                <span className="text-2xl">
+                <span className="text-2xl cursor-pointer">
                   {activeIndex === index ? <FiMinus /> : <FiPlus />}
                 </span>
               </button>

@@ -23,7 +23,7 @@ const amenities: Amenity[] = [
   {
     id: 2,
     icon: <DoubleHeightShopsIcon className="size-20" />,
-    title: "Double Height Shops",
+    title: "2X Height Shops",
   },
   {
     id: 3,
@@ -61,12 +61,12 @@ const Amenities: React.FC = () => {
   return (
     <section className="bg-white w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-12  xl:py-32 gap-8 lg:gap-16 xl:gap-20">
       <h2
-        className="font-semibold text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]"
+        className="font-semibold text-3xl md:text-4xl text-center 2xl:text-[42px] text-[#006994]"
         data-aos="fade-up"
       >
         World Class Amenities
       </h2>
-      <main className="w-full max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-16">
+      <main className="w-full max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-16">
         {amenities.map((amenity) => (
           <div
             key={amenity.id}

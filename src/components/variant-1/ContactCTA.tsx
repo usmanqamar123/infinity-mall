@@ -17,7 +17,7 @@ const ContactCTA = () => {
         <button
           type="button"
           onClick={toggleModal}
-          className="relative z-10 bg-white/20 border border-white hover:bg-white/30 text-white p-7 rounded-full"
+          className="relative z-10 bg-white/20 border border-white hover:bg-white/30 text-white p-7 rounded-full cursor-pointer"
         >
           <CiPlay1 size={50} className="text-white" />
         </button>

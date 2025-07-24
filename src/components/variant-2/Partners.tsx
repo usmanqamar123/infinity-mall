@@ -15,11 +15,11 @@ const partnerImages = [
   "/variant-2/Partners/partner-6.png",
   "/variant-2/Partners/partner-7.png",
   "/variant-2/Partners/partner-8.png",
-  "/variant-2/Partners/partner-9.jpg",
-  "/variant-2/Partners/partner-10.jpeg",
-  "/variant-2/Partners/partner-11.jpeg",
-  "/variant-2/Partners/partner-12.jpeg",
-  "/variant-2/Partners/partner-13.jpeg",
+  // "/variant-2/Partners/partner-9.jpg",
+  "/variant-2/Partners/partner-10.png",
+  "/variant-2/Partners/partner-11.png",
+  "/variant-2/Partners/partner-12.png",
+  // "/variant-2/Partners/partner-13.jpeg",
 ];
 
 const Partners = () => {

@@ -39,63 +39,69 @@ const Header = () => {
     <>
       {/* Desktop Nav */}
       <nav
-        className={`w-full fixed top-0 z-40 px-10 py-6 hidden xl:flex items-center justify-between transition-all duration-300 ${
+        className={`fixed top-0 w-full z-40 px-10 py-6 transition-all duration-300  ${
           scrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
-        <div className="flex items-center gap-3">
-          <Image
-            src="/InfinityMallLogo.png"
-            width={70}
-            height={70}
-            alt="Infinity Mall Logo"
-          />
-          <h2
-            className={`text-2xl font-medium ${
-              scrolled ? "text-[#4E342E]" : "text-white"
-            }`}
-          >
-            Infinity Mall
-          </h2>
-        </div>
-
-        <div className="flex gap-10">
-          {navItems.map((item) => (
-            <Link
-              key={item}
-              href="/"
-              className={`hover:text-[#008B8B] ${
+        <nav
+          className={`w-full max-w-[1440px] mx-auto hidden xl:flex  items-center justify-between  `}
+        >
+          <div className="flex items-center gap-3">
+            <Image
+              src="/InfinityMallLogo.png"
+              width={70}
+              height={70}
+              alt="Infinity Mall Logo"
+            />
+            <h2
+              className={`text-2xl font-medium ${
                 scrolled ? "text-[#4E342E]" : "text-white"
               }`}
             >
-              {item}
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-6">
-          <button className="bg-gradient-to-r from-[#006994] to-[#008B8B] px-4 py-2 rounded-full text-white">
-            Request a call
-          </button>
-
-          <div className="flex gap-3">
-            {[FaFacebook, FaInstagram, FaYoutube, FaLinkedin].map(
-              (Icon, idx) => (
-                <Icon
-                  key={idx}
-                  size={24}
-                  className={`transition-colors duration-300 ${
-                    scrolled ? "text-[#006994]" : "text-white"
-                  } hover:text-[#008B8B]`}
-                />
-              )
-            )}
+              Infinity Mall
+            </h2>
           </div>
-        </div>
+
+          <div className="flex gap-10">
+            {navItems.map((item) => (
+              <Link
+                key={item}
+                href="/"
+                className={` ${
+                  scrolled
+                    ? "text-[#4E342E] hover:text-[#006994]"
+                    : "text-white hover:underline hover:underline-offset-4"
+                }`}
+              >
+                {item}
+              </Link>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-6">
+            <button className="bg-gradient-to-r from-[#006994] to-[#008B8B] px-4 py-2 rounded-full text-white">
+              Request a call
+            </button>
+
+            <div className="flex gap-3">
+              {[FaFacebook, FaInstagram, FaYoutube, FaLinkedin].map(
+                (Icon, idx) => (
+                  <Icon
+                    key={idx}
+                    size={24}
+                    className={`transition-colors duration-300 ${
+                      scrolled ? "text-[#006994]" : "text-white"
+                    } hover:text-[#008B8B]`}
+                  />
+                )
+              )}
+            </div>
+          </div>
+        </nav>
       </nav>
 
       {/* Mobile Nav (unchanged) */}
-      <nav className="bg-white w-full fixed top-0 z-40 shadow-md px-5 py-4 flex xl:hidden justify-between items-center">
+      <nav className="bg-white w-full fixed top-0 z-40 shadow-sm px-5 py-4 flex xl:hidden justify-between items-center">
         <div className="flex items-center gap-3">
           <Image
             src="/InfinityMallLogo.png"
@@ -116,7 +122,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay (unchanged) */}
       {isMobileMenuOpen && (
-        <div className="fixed top-20 left-0 w-full bg-white z-30 shadow-md px-5 py-6 lg:hidden flex flex-col gap-4 text-center">
+        <div className="fixed top-14 w-full md:w-60 h-full right-0 bg-white z-30 shadow-md px-5 py-10 xl:hidden flex flex-col gap-7 text-center">
           {navItems.map((item) => (
             <Link
               key={item}
@@ -132,7 +138,7 @@ const Header = () => {
             Request a call
           </button>
 
-          <div className="flex justify-center gap-4 pt-4 border-t border-gray-200">
+          <div className="flex justify-center gap-4 pt-7 border-t border-gray-200">
             {[FaFacebook, FaInstagram, FaYoutube, FaLinkedin].map(
               (Icon, idx) => (
                 <Icon

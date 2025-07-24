@@ -68,7 +68,7 @@ const ApartmentDetails = () => {
       </h2>
       <main
         className="
-        w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-8 2xl:gap-16"
+        w-full max-w-[1440px] mx-auto flex flex-col-reverse lg:flex-row items-start justify-center lg:justify-between gap-8 2xl:gap-16"
       >
         {/* Left Column */}
         <div className="w-full lg:w-[45%] space-y-7">
@@ -113,7 +113,7 @@ const ApartmentDetails = () => {
             backgroundImage:
               "url('/Home/ApartmentDetails/ApartmentDetails.png')",
           }}
-          className="w-full lg:w-[43%] h-[550px] bg-center bg-cover bg-no-repeat flex items-center justify-center "
+          className="w-full h-[400px] md:w-[75%] mx-auto md:h-[450px] lg:w-[43%] lg:h-[550px] bg-center bg-cover bg-no-repeat flex items-center justify-center "
         ></div>
       </main>
     </section>

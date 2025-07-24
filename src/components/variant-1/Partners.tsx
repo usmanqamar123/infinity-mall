@@ -15,16 +15,16 @@ const partnerImages = [
   "/variant-2/Partners/partner-6.png",
   "/variant-2/Partners/partner-7.png",
   "/variant-2/Partners/partner-8.png",
-  "/variant-2/Partners/partner-9.jpg",
-  "/variant-2/Partners/partner-10.jpeg",
-  "/variant-2/Partners/partner-11.jpeg",
-  "/variant-2/Partners/partner-12.jpeg",
-  "/variant-2/Partners/partner-13.jpeg",
+  // "/variant-2/Partners/partner-9.jpg",
+  "/variant-2/Partners/partner-10.png",
+  "/variant-2/Partners/partner-11.png",
+  "/variant-2/Partners/partner-12.png",
+  // "/variant-2/Partners/partner-13.jpeg",
 ];
 
 const Partners = () => {
   return (
-    <section className="w-full h-full flex flex-col gap-7 items-center justify-center px-4 md:px-8 xl:px-12 pb-">
+    <section className="w-full h-full flex flex-col gap-8 lg:gap-16 xl:gap-20 items-center justify-center px-4 md:px-8 xl:px-12 py-20 lg:py-24 2xl:py-32">
       <h2 className="font-semibold text-3xl md:text-4xl 2xl:text-[42px] text-[#006994]">
         Our Partners
       </h2>
@@ -54,7 +54,7 @@ const Partners = () => {
               width={300}
               height={300}
               alt={`Partner ${index + 1}`}
-              className="h-[300px] w-auto object-contain"
+              className="w-[250px] h-auto object-contain bg-[#f1efec]"
             />
           </SwiperSlide>
         ))}
